@@ -1,10 +1,10 @@
-package org.springframework.beans.factory;
+package org.springframework.test.ioc;
 
 import org.junit.Test;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 
-public class BeanFactoryTest {
+public class BeanDefinitionAndBeanDefinitionRegistryTest {
 
     @Test
     public void testBeanFactory() throws Exception {
