@@ -12,6 +12,7 @@ public class BeanFactoryTest {
         BeanDefinition beanDefinition = new BeanDefinition(HelloService.class);
         beanFactory.registerBeanDefinition("helloService", beanDefinition);
 
+        // 两次get的bean是同一个对象，单例模式
         HelloService helloService = (HelloService) beanFactory.getBean("helloService");
         HelloService helloService1 = (HelloService) beanFactory.getBean("helloService");
         System.out.println(helloService);
